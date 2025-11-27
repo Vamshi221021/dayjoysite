@@ -6,6 +6,7 @@
     top: 0;
     background-color: white;
     z-index: 1000;
+     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 .a1{
     height: 100px;
@@ -19,6 +20,7 @@
     align-content: center;
     font-family: "algerian";
     font-size: 50px;
+    color: #df8919;
 }
 .b{
     display: flex;
@@ -32,6 +34,7 @@ nav {
   padding-left: 70;   
   height: 25px;
   background-color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 100px;
   z-index: 1000;
@@ -331,15 +334,38 @@ url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&di
 
 /* Swiper Navigation */
 .swiper-button-next, .swiper-button-prev {
-  color: #df8919;
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.3));
+  color: orange;
 }
 
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease;
+}
 .swiper-pagination-bullet {
   background: #df8919;
   opacity: 0.5;
 }
 .swiper-wrapper{
   background-color: none;
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.badge {
+    padding: 4px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+.swiper {
+    padding-bottom: 40px;
 }
 
 #Profile {
@@ -384,4 +410,5 @@ address{
   color:white;
   font-weight: bold;
 }
+
 
