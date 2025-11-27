@@ -1,0 +1,387 @@
+.a{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+.a1{
+    height: 100px;
+    width: 10%;
+}
+
+.a2{
+    height: 100px;
+    width: 90%;
+    text-align: center;
+    align-content: center;
+    font-family: "algerian";
+    font-size: 50px;
+}
+.b{
+    display: flex;
+    width: 100%;
+    height: 30px;
+}
+nav {    
+  width: 100%;  
+  display: flex;               
+  justify-content: center;  
+  padding-left: 70;   
+  height: 25px;
+  background-color: white;
+  position: fixed;
+  top: 100px;
+  z-index: 1000;
+}  
+nav a {
+  color: orange;                 
+  text-decoration: none;        
+  font-family: Arial, sans-serif;
+  transition: background 0.3s;  
+  padding: 0 50 0 50;
+}
+nav a:hover {
+  background-color: orange;    
+  color: white;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav ul {
+  list-style: none;      
+  margin: 0;
+  padding: 0;
+  display: flex;         
+  gap: 20px;             
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: orange;
+  font-size: 18px;
+}
+#c{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    padding-top: 80px;
+    scroll-margin-top: 100px;
+}
+.c1{
+    width: 40%;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+.c2{
+    width: 60%;
+    height: 420px;
+    align-content: center;
+    text-align: center;
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+.mng{
+    border: 4px solid #df8919;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+p{
+    font-size: 30px;
+    color: black;
+    align-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#d{
+    height: 300px;
+    width: 100%;
+    scroll-margin-top: 125px;
+    padding-top: 10px;
+    display: flex;
+        position: relative;
+        overflow: hidden;
+}
+.d1{
+    height: 300px;
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:orange;
+    
+    align-content: center;
+}
+
+#d::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://images.jdmagicbox.com/comp/kota-rajasthan/d5/9999px744.x744.210917104531.f4d5/catalogue/dayjoy-marketing-indra-vihar-kota-rajasthan-business-networking-services-gkxwv7yhdb.jpg?clr=");
+    background-size: 150%;   /* increase size of image */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;            /* reduce opacity */
+    z-index: -1;             /* keep text in front */
+}
+.d1 ul{
+  list-style-position: inside;  /* moves bullet closer to text */
+  margin: 0;      
+  list-style-type: none;
+}
+.d1 ul li{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 0 0 2px orange;
+}
+
+.d2{
+  width:50%;
+  height: 300px;
+  text-align: center;
+}
+.com{
+  border-radius: 10px;
+  border: 4px solid #df8919;
+}
+.e{
+  width: auto;
+  height: 500px;
+  background-color: #df8919;
+}
+/* importing google fonts inter */
+@import 
+url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+*{
+   font-family: "Inter", sans-serif;
+}
+
+
+.swiper-wrapper .card-item .card-link:active{
+  cursor: grabbing ;
+}
+.swiper-wrapper .card-item .card-link:hover{
+  border-color:#df8919;
+}
+
+.swiper-wrapper .card-item{
+  list-style: none;
+}
+
+
+.swiper-wrapper .card-link .badge.one{
+  color:black;
+  background: yellow;
+}
+.swiper-wrapper .card-link .badge.two{
+  color:black;
+  background: orange;
+}
+.swiper-wrapper .card-link .badge.three{
+  color:black;
+  background: yellow;
+}
+.swiper-wrapper .card-link .badge.four{
+  color:black;
+  background: orange;
+}
+.swiper-wrapper .card-link .badge.five{
+  color:black;
+  background: yellow;
+}
+
+.swiper-wrapper .card-link .badge{
+  padding:10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+#Products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 125px;
+}
+
+.swiper-wrapper .card-link .card-title{
+  font-size: 1.9rem;
+  color: #000;
+  font-weight: 600;
+}
+.swiper-wrapper .card-link .card-button{
+  height: 35px;
+  width:35px;
+  color:#df8919;
+  border-radius: 50%;
+  border: 2px solid #df8919;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.swiper-wrapper .card-link:hover .card-button{
+  color: #fff;
+  background: #df8919;
+}
+
+
+
+.card-wrapper .swiper-pagination-bullet{
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background:#df8919;
+}
+.card-wrapper .swiper-pagination-bullet-active{
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.card-wrapper .swiper-slide-button{
+  color: #df8919;
+  margin: -35px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper{
+    margin: 0 10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button{
+    display: none;
+  }
+}
+/* Card Styles */
+.card-item .card-link {
+  display: block;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+  transition: 0.2s ease;
+  width: 80%; /* fixed width for slide cards */
+  margin: 10px;
+}
+
+
+
+/* Card Wrapper (Slider Container) */
+.card-wrapper {
+  width: 100%;
+  padding: 20px 35px;
+  box-sizing: border-box;
+}
+
+/* Swiper Slides */
+.swiper-slide {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+
+.card-link .card-image {
+  width: 100%;          /* full width of the card */
+  height: 400px;        /* or choose a height that fits your design */
+   /* fills the container without distortion */
+  border-radius: 10px;  /* optional rounded corners */
+  border: #df8919 2px solid;
+}
+
+
+
+.swiper-wrapper.card-link .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #df8919;
+  border-radius: 50%;
+  border: 2px solid #df8919;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-link:hover .card-button {
+  background: #df8919;
+  color: #fff;
+}
+
+/* Swiper Navigation */
+.swiper-button-next, .swiper-button-prev {
+  color: #df8919;
+}
+
+.swiper-pagination-bullet {
+  background: #df8919;
+  opacity: 0.5;
+}
+.swiper-wrapper{
+  background-color: none;
+}
+
+#Profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 125px;
+}
+.card-title{
+  text-align: center;
+}
+
+#Contactus{
+  display: grid;
+  width:100%;
+  border-radius: 0 0 20px 20px;
+  background-color: black;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: auto 1fr;
+}
+address{
+  grid-column: 1/ span 1;
+
+  align-content: center;
+  text-align: center;
+  color:white;
+  font-weight: bold;
+}
+.phone{
+  grid-column: 2/ span 1;
+
+  align-content: center;
+  text-align: center;
+  color:white;
+  font-weight: bold;
+}
+.email{
+  grid-column: 3/ span 1;
+
+  align-content: center;
+  text-align: center;
+  color:white;
+  font-weight: bold;
+}
+
